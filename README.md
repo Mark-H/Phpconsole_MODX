@@ -18,8 +18,11 @@ send; it will automatically call the toArray() method.
 
 Have fun!
 
+You can install Phpconsole through Package Management.
+
 * Phpconsole: http://phpconsole.com/
 * Phpconsole Dashboard: https://app.phpconsole.com/dashboard
 * Original Library: https://github.com/phpconsole/phpconsole
 * MODX Revolution: http://modx.com/software/open-source-cms/modx-revolution/
+* Phpconsole for MODX Revolution on MODX.com: http://modx.com/extras/package/phpconsole
 
