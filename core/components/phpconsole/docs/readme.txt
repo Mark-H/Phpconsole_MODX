@@ -11,6 +11,9 @@ system settings, you can use code like the example below throughout MODX and you
 
     if (isset($modx->phpconsole)) $modx->phpconsole->send($someData, 'username');
 
+The Phpconsole for MODX service class also lets you log xPDOObject derivatives by simply passing it as the data to
+send; it will automatically call the toArray() method.
+
 Have fun!
 
 
