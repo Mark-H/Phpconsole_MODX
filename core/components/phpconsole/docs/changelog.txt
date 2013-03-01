@@ -1,0 +1,6 @@
+++++++++++++++++++++++++++++++++
+++   Phpconsole 1.0.0-rc1     ++
+++   Released on 2013-03-01   ++
+++++++++++++++++++++++++++++++++
+
+Initial release of Phpconsole service class for MODX Revolution.

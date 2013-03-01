@@ -1,10 +1,8 @@
-````
 --------------------------------------------
 Phpconsole for MODX v1.0.0-rc1
 --------------------------------------------
 Author: Mark Hamstra - hello@markhamstra.com
 --------------------------------------------
-````
 
 Phpconsole for MODX implements a Service class for phpconsole.com.
 
@@ -15,8 +13,6 @@ system settings, you can use code like the example below throughout MODX and you
 
 Have fun!
 
-* Phpconsole: http://phpconsole.com/
-* Phpconsole Dashboard: https://app.phpconsole.com/dashboard
-* Original Library: https://github.com/phpconsole/phpconsole
-* MODX Revolution: http://modx.com/software/open-source-cms/modx-revolution/
+
+
 
