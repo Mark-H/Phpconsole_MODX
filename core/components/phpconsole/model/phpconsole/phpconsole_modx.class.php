@@ -29,4 +29,30 @@ class Phpconsole_MODX extends Phpconsole {
             }
         }
     }
+
+    /**
+     * {@inheritdoc}
+     * @param $data_sent
+     * @param bool $user
+     */
+    public function send($data_sent, $user = false) {
+        if ($data_sent instanceof xPDOObject) {
+            $original = $data_sent;
+            $data_sent = $data_sent->toArray();
+        }
+        $return = $data_sent;
+
+        try {
+            $return = parent::send($data_sent, $user);
+        } catch (Exception $e) {
+            $this->modx->log(modX::LOG_LEVEL_ERROR, '[Phpconsole] Exception ' . $e->getCode() . ': ' . $e->getMessage());
+        }
+
+        if (isset($original)) {
+            return $original;
+        } else {
+            return $return;
+        }
+    }
+
 }
