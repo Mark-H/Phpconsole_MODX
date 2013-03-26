@@ -17,6 +17,8 @@ class Phpconsole_MODX extends Phpconsole {
         $this->set_backtrace_depth($this->modx->getOption('phpconsole.backtrace_depth', null, 1));
         $this->set_domain($this->modx->getOption('phpconsole.domain', null, '.localhost'));
 
+        $this->set_path_to_cert(dirname(__FILE__) . '/cacert.pem');
+
         $users = $this->modx->getOption('phpconsole.users');
         $users = $this->modx->fromJSON($users);
         if (is_array($users)) {
